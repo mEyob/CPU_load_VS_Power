@@ -17,7 +17,7 @@ def cpuLoadPower(samples, sampling_interval, * , write_freq=100, interval=None, 
     temp_data = []
 
     fhandle = open('volt-amp-chrg-cpuLoad.csv', 'w')
-    fhandle.write('Time, mV, mA, mAh, cpu_load\n')
+    fhandle.write('Time,mV,mA,mAh,cpu_load\n')
     fhandle.close()
 
     for sample in range(samples):
@@ -25,21 +25,25 @@ def cpuLoadPower(samples, sampling_interval, * , write_freq=100, interval=None, 
 
             bash_string = subprocess.getoutput('./run_sys_profiler.sh')
             mV, mA, mAh = bash_string.split('\n')
-            new_sample  = {
-                'Time':datetime.now().strftime('%H:%M:%S:%f'),
-                'mV': mV,
-                'mA': mA,
-                'mAh':mAh,
-                'cpu_load': psutil.cpu_percent(interval)
-            }
-        except ValueError:
-            raise ValueError('Failed to convert str to int/float')
+        
         except:
-            print('Something wrong with the subprocess call')
+            print('Something went wrong in the subprocess call. \nCheck the run_sys_profiler.sh script')
+        
+        cpu_load   = psutil.cpu_percent(interval)
+
+        new_sample = {
+            'Time':datetime.now().strftime('%H:%M:%S:%f'),
+            'mV': mV,
+            'mA': mA,
+            'mAh':mAh,
+            'cpu_load': cpu_load
+        }
 
         temp_data.append(new_sample)
 
         if sample % write_freq == 0:
+            # Uncomment the following lines to use to_csv method of 
+            # Pandas instead of the write_to_file function given below
             # temp_df = pd.DataFrame(temp_data)
             # temp_df.to_csv('volt-amp-chrg-cpuLoad.csv',
             #                  mode='a',
@@ -54,7 +58,13 @@ def cpuLoadPower(samples, sampling_interval, * , write_freq=100, interval=None, 
 
 def write_to_file(file_handle, list_of_dict):
     for entry in list_of_dict:
-        file_handle.write(entry['Time'] +','+ entry['mV'] +','+ entry['mA'] +','+ entry['mAh'] +','+ str(entry['cpu_load']) +'\n')
+        file_handle.write(
+            entry['Time'] +','+ 
+            entry['mV'] +','+ 
+            entry['mA'] +','+ 
+            entry['mAh'] +','+ 
+            str(entry['cpu_load']) +'\n'
+            )
 
 if __name__ == '__main__':
     lp = LineProfiler()
