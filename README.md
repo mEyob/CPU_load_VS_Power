@@ -1,3 +1,5 @@
+## Intro
+
 This repo illustrates the relationship between power consumption, CPU load, <br />
 and CPU frequence of a laptop computer. Sample power consumption, CPU load  <br />
 and frequency data is collected from a Macbook Pro having a Core i5 2.9 GHZ  <br />
