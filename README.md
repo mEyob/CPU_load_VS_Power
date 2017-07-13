@@ -1,10 +1,10 @@
 ## Intro
-
+---
 This repo illustrates the relationship between power consumption, CPU load, <br />
 and CPU frequence of a laptop computer. Sample power consumption, CPU load  <br />
 and frequency data is collected from a Macbook Pro having a Core i5 2.9 GHZ  <br />
 processor powered by MacOS Seirra.
-----
+
 **Tools used:**
 
 *MacOS SystemProfiler*: to collect battery discharge info., i.e., 
@@ -20,4 +20,4 @@ processor powered by MacOS Seirra.
 
 *bokeh*: for plotting
 
-Aditionally, I wrote a small python program, *power_profile*, to automate the data collection
+I also wrote a small python program, *power_profile*, to automate the data collection
