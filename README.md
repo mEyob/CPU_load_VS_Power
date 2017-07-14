@@ -1,9 +1,9 @@
 ## Intro
 
 This repo illustrates the relationship between power consumption, CPU load, <br />
-and CPU frequence of a laptop computer. Sample power consumption, CPU load  <br />
-and frequency data is collected from a Macbook Pro having a Core i5 2.9 GHZ  <br />
-processor powered by MacOS Seirra.
+and CPU frequency of a laptop computer. The subsequent analysis is based on a dataset 
+collected from a 13-inch Macbook Pro running on a Core i5-5287U  <br />
+processor with MacOS Seirra installed.
 
 **Tools used:**
 
