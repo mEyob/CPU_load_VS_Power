@@ -36,7 +36,7 @@ The dataset consists of two data frames populated with the following readings:
 
 Aditionally, I had to write a small python program to automate the data collection. <br >
 Finally, for anyone interested, the data and associated code lives [here](https://github.com/mEyob/CPU_load_VS_Power).
- - 3.54
+
 ## 2. Energy efficiency
 
 Energy efficiency is a vital factor to consider in the design of modern computer systems.
