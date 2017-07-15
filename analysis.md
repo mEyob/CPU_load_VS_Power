@@ -67,3 +67,13 @@ The empirical [data](/data) illustrates this, with a polynomial curve fitting re
 <a href="https://www.codecogs.com/eqnedit.php?latex=P(f)&space;=&space;2.33&space;f^2&space;-&space;3.54&space;f&space;&plus;&space;3.48" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(f)&space;=&space;2.33&space;f^2&space;-&space;3.54&space;f&space;&plus;&space;3.48" title="P(f) = 2.33 f^2 - 3.54 f + 3.48" /></a>
 
 <img src="figures/Freq-vs-ProcPower.png" alt="perHr" style="width: 200px; height: 200px" />
+
+## Speed scaling
+
+<img src="figures/Load-vs-Freq.png" alt="perHr" style="width: 200px; height: 200px" />
+
+<img src="figures/Load-vs-ProcPower.png" alt="perHr" style="width: 200px; height: 200px" />
+
+## Total power vs CPU power
+
+<img src="figures/Load-vs-Power.png" alt="perHr" style="width: 200px; height: 200px" />
