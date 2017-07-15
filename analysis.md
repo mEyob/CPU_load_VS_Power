@@ -37,6 +37,16 @@ The dataset consists of two data frames populated with the following readings:
 Aditionally, I had to write a small python program to automate the data collection. <br >
 Finally, for anyone interested, the data and associated code lives [here](https://github.com/mEyob/CPU_load_VS_Power).
 
-## 2. The CPU and power proportional computing
+## 2. Energy efficiency
+
+Energy efficiency is a vital factor to consider in the design of modern computer systems.
+Some of the top energy consumers in a laptop are CPU, LCD, RAM, GPU, and disk, with the most 
+power hungry component being the CPU.
+
+### CPU power consumption
+
+Power consumption of a CPU is given by
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=P&space;\propto&space;V^2\times&space;f" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P&space;\propto&space;V^2\times&space;f" title="P \propto V^2\times f" /></a>
 
 <img src="figures/Freq-vs-ProcPower.png" alt="perHr" style="width: 200px; height: 200px" />

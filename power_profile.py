@@ -16,7 +16,7 @@ def cpuLoadPower(samples, sampling_interval, * , write_freq=100, interval=None, 
 
     temp_data = []
 
-    fhandle = open('volt-amp-chrg-cpuLoad.csv', 'w')
+    fhandle = open(os.path.join(os.gcwd(),'data','volt-amp-chrg-cpuLoad.csv'), 'w')
     fhandle.write('Time,mV,mA,mAh,cpu_load\n')
     fhandle.close()
 
@@ -49,7 +49,7 @@ def cpuLoadPower(samples, sampling_interval, * , write_freq=100, interval=None, 
             #                  mode='a',
             #                  header=False,
             #                  index=False)
-            with open('volt-amp-chrg-cpuLoad.csv', 'a') as f:
+            with open(os.path.join(os.gcwd(),'data','volt-amp-chrg-cpuLoad.csv'), 'a') as f:
                 write_to_file(f, temp_data)
             temp_data = []
             stream.write('{} > {} samples processed\n'.format(datetime.now(), sample))
