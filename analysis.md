@@ -1,3 +1,10 @@
++++
+tags = ["Data analysis", "Computing", "power proportionality"]
+title = " Power proportional computing"
+math = true
+
++++
+
 ## 1. Introduction
 
 This notebook illustrates the relationship between power consumption, CPU load, <br />
@@ -15,12 +22,12 @@ The dataset consists of two data frames populated with the following readings:
 |Current      |  Current reading of the battry (in mA)|
 |Remaining charge |   Remaining charge of the battery in (mAh)|
 |CPU load |   CPU load in (%)|
-|Total power consumption |  Power consumption (in Watts) <br /> computed using $P = V*I$ <br />where V and I are obtained from the Voltage and Current columns|
-|Processor power consumption$^*$ |  Power consumption of the processor, i.e., <br /> *Total power - processor power = pwr cons. of other components* |
-|Processor speed (freq)$^*$ |  processor clock frequency (in MHz) at sampling instance|
+|Total power consumption |  Power consumption (in Watts) <br /> computed using *P = V\*I* <br />where V and I are obtained from the Voltage and Current columns|
+|Processor power consumption\* |  Power consumption of the processor, i.e., <br /> *Total power - processor power = pwr cons. of other components* |
+|Processor speed (freq)\* |  processor clock frequency (in MHz) at sampling instance|
 
 
-$^*$ Data collected using [Intel Power Gadget](https://software.intel.com/en-us/articles/intel-power-gadget-20).
+\* Data collected using [Intel Power Gadget](https://software.intel.com/en-us/articles/intel-power-gadget-20).
 
 ----
 **Tools used:**
