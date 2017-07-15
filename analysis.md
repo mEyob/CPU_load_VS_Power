@@ -36,7 +36,7 @@ The dataset consists of two data frames populated with the following readings:
 
 Aditionally, I had to write a small python program to automate the data collection. <br >
 Finally, for anyone interested, the data and associated code lives [here](https://github.com/mEyob/CPU_load_VS_Power).
-
+ - 3.54
 ## 2. Energy efficiency
 
 Energy efficiency is a vital factor to consider in the design of modern computer systems.
@@ -60,6 +60,10 @@ Generally,
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=P&space;\propto&space;f^a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P&space;\propto&space;f^a" title="P \propto f^a" /></a>
 
-where the proportionality exponent *a* in the range(1, 3).
+where the proportionality exponent *a* in the range(1, 3). 
+
+The empirical [data](/data) illustrates this, with a polynomial curve fitting resulting in 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=P(f)&space;=&space;2.33&space;f^2&space;-&space;3.54&space;f&space;&plus;&space;3.48" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(f)&space;=&space;2.33&space;f^2&space;-&space;3.54&space;f&space;&plus;&space;3.48" title="P(f) = 2.33 f^2 - 3.54 f + 3.48" /></a>
 
 <img src="figures/Freq-vs-ProcPower.png" alt="perHr" style="width: 200px; height: 200px" />
