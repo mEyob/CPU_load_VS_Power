@@ -45,8 +45,21 @@ power hungry component being the CPU.
 
 ### CPU power consumption
 
-Power consumption of a CPU is given by
+Power consumption of a CPU is given by the proportionality,
+
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=P&space;\propto&space;V^2\times&space;f" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P&space;\propto&space;V^2\times&space;f" title="P \propto V^2\times f" /></a>
+
+where *V* is the supply voltage to the CPU and *f* is the clock frequency in Hz.
+However, clock frequency is also proportional to supply voltage, i.e,
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=f&space;\propto&space;V" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f&space;\propto&space;V" title="f \propto V" /></a>,
+
+yeilding a cubic relatioinship between power consumption (*P*) and clock frequency (*f*).
+Generally, 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=P&space;\propto&space;f^a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P&space;\propto&space;f^a" title="P \propto f^a" /></a>
+
+where the proportionality exponent *a* in the range(1, 3).
 
 <img src="figures/Freq-vs-ProcPower.png" alt="perHr" style="width: 200px; height: 200px" />
