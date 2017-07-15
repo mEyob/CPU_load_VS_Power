@@ -39,4 +39,4 @@ Finally, for anyone interested, the data and associated code lives [here](https:
 
 ## 2. The CPU and power proportional computing
 
-<img src="Freq-vs-ProcPower.png" alt="perHr" style="width: 400px; height: 400px" />
+<img src="Freq-vs-ProcPower.png" alt="perHr" style="width: 200px; height: 200px" />
