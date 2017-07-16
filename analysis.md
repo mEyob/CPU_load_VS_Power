@@ -62,9 +62,13 @@ Generally,
 
 where the proportionality exponent *a* is in the range (1, 3). 
 
-Let us illustrate this proportionality using the empirical described in the [Introduction](#1-introduction) illustrates this, with a polynomial curve fitting resulting in 
+Let us illustrate this proportionality using the empirical described in the [Introduction](#1-introduction).
+The following figure shows a scatter plot of CPU power consumption as a function of CPU clock frequency. 
+The dotted line is a polynomial curve fitting of the data resulting in a quadratic relationship between 
+power and frequency (i.e. *a=2*),
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=P(f)&space;=&space;2.33&space;f^2&space;-&space;3.54&space;f&space;&plus;&space;3.48" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(f)&space;=&space;2.33&space;f^2&space;-&space;3.54&space;f&space;&plus;&space;3.48" title="P(f) = 2.33 f^2 - 3.54 f + 3.48" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=P(f)&space;=&space;2.33&space;f^2&space;-&space;3.54&space;f&space;&plus;&space;3.48" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(f)&space;=&space;2.33&space;f^2&space;-&space;3.54&space;f&space;&plus;&space;3.48" title="P(f) = 2.33 f^2 - 3.54 f + 3.48." /></a>
+
 
 <img src="figures/Freq-vs-ProcPower.png" alt="perHr" style="width: 200px; height: 200px" />
 
