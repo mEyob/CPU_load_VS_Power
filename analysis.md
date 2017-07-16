@@ -45,7 +45,7 @@ power hungry component being the CPU.
 
 ### CPU power consumption
 
-Power consumption of a CPU is given by the proportionality,
+Power consumption of a CPU is usually modeled by the proportionality,
 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=P&space;\propto&space;V^2\times&space;f" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P&space;\propto&space;V^2\times&space;f" title="P \propto V^2\times f" /></a>
@@ -60,9 +60,9 @@ Generally,
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=P&space;\propto&space;f^a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P&space;\propto&space;f^a" title="P \propto f^a" /></a>
 
-where the proportionality exponent *a* in the range(1, 3). 
+where the proportionality exponent *a* is in the range (1, 3). 
 
-The empirical [data](/data) illustrates this, with a polynomial curve fitting resulting in 
+Let us illustrate this proportionality using the empirical described in the [Introduction](#1.-Introduction) illustrates this, with a polynomial curve fitting resulting in 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=P(f)&space;=&space;2.33&space;f^2&space;-&space;3.54&space;f&space;&plus;&space;3.48" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(f)&space;=&space;2.33&space;f^2&space;-&space;3.54&space;f&space;&plus;&space;3.48" title="P(f) = 2.33 f^2 - 3.54 f + 3.48" /></a>
 
