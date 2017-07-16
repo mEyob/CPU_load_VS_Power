@@ -20,4 +20,5 @@ processor with MacOS Seirra installed.
 
 *bokeh*: for plotting
 
-I also wrote a small python program, *power_profile*, to automate the data collection
+I also wrote a small python program, *power_profile*, to automate the data collection.
+Start [here](analysis.md) for a short description of the project and analysis of the collected data.
