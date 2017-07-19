@@ -66,7 +66,7 @@ where the proportionality exponent *a* is in the range (1, 3).
 Let us illustrate this proportionality using the empirical data described in the [Introduction](#1-introduction).
 The following figure shows a scatter plot of CPU power consumption as a function of CPU clock frequency. 
 The dotted line is a polynomial curve fitting of the data resulting in a quadratic relationship between 
-power and frequency (i.e. *a=2*),
+power and frequency (i.e. *a=2* in the above proportionality equation),
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=P(f)&space;=&space;2.33&space;f^2&space;-&space;3.54&space;f&space;&plus;&space;3.48" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(f)&space;=&space;2.33&space;f^2&space;-&space;3.54&space;f&space;&plus;&space;3.48" title="P(f) = 2.33 f^2 - 3.54 f + 3.48." /></a>
 
@@ -78,10 +78,13 @@ As shown in the above figure, the CPU operates at a range of frequencies, 1.3 GH
 under consideration. This is for the laptop's own good. When high speed is not needed, the CPU saves battery power by operating at lower 
 frequency.
 
-Being the heart of a computer, the CPU also imitates how the heart operates, sort of. Just like our heart starts pumping more blood when we start running or when we engage with some other demanding task, the CPU can vary the clock frequency depending on the amount of workload. This mechanism is called **speed scaling** or **speed step** when the range of frequency is between the *lowest* and the *stock frequency*, and **turbo boost** for the range *stock frequency* to *max frequency*. The following figure illustrates this phenomenon using the data collected from the computer under 
-study.
+Being the heart of a computer, the CPU also imitates how the heart operates, sort of. Just like our heart starts pumping more blood when we start running or when we engage with some other demanding task, the CPU can vary the clock frequency depending on the amount of workload. This mechanism is called **speed scaling** or **speed step** when the range of frequency is between the *lowest* and the *stock frequency*, and **turbo boost** for frequencies in between the *stock frequency* and the *max frequency*. The following figure illustrates this phenomenon using the data collected from the computer under study.
 
 <img src="figures/Load-vs-Freq.png" alt="perHr" style="width: 200px; height: 200px" />
+
+Some claim that *turbo boost* is just *speed scaling* rebranded for marketing purpose. That might very well be the case. However, one clear distinction
+is that with speed scaling, all the cores of a CPU can simultaneously operate at the advertised stock frequency if needed, whereas only one 
+core can be turbo boosted at a time.
 
 <img src="figures/Load-vs-ProcPower.png" alt="perHr" style="width: 200px; height: 200px" />
 
