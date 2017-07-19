@@ -55,14 +55,15 @@ However, clock frequency is also proportional to supply voltage, i.e,
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=f&space;\propto&space;V" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f&space;\propto&space;V" title="f \propto V" /></a>,
 
-yeilding a cubic relatioinship between power consumption (*P*) and clock frequency (*f*).
+yeilding a cubic relatioinship between power consumption (*P*) and clock frequency (*f*). However,
+lower degrees of proportionality may often emerge as there are several factors affecting the proportionality.
 Generally, 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=P&space;\propto&space;f^a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P&space;\propto&space;f^a" title="P \propto f^a" /></a>
 
 where the proportionality exponent *a* is in the range (1, 3). 
 
-Let us illustrate this proportionality using the empirical described in the [Introduction](#1-introduction).
+Let us illustrate this proportionality using the empirical data described in the [Introduction](#1-introduction).
 The following figure shows a scatter plot of CPU power consumption as a function of CPU clock frequency. 
 The dotted line is a polynomial curve fitting of the data resulting in a quadratic relationship between 
 power and frequency (i.e. *a=2*),
@@ -73,7 +74,7 @@ power and frequency (i.e. *a=2*),
 <img src="figures/Freq-vs-ProcPower.png" alt="perHr" style="width: 200px; height: 200px" />
 
 ## Speed scaling
-As shown in the above figure, the CPU operates at a range of frequency, 1.3 GHz to 3.3 GHz, instead of operating at the advertised stock frequency, which is at 2.9 GHz for the particular [CPU model](http://ark.intel.com/products/84988/Intel-Core-i5-5287U-Processor-3M-Cache-up-to-3_30-GHz)
+As shown in the above figure, the CPU operates at a range of frequencies, 1.3 GHz to 3.3 GHz, instead of operating at the advertised stock frequency, which is at 2.9 GHz for the particular [CPU model](http://ark.intel.com/products/84988/Intel-Core-i5-5287U-Processor-3M-Cache-up-to-3_30-GHz)
 under consideration.
 
 Being the heart of a computer, the CPU also imitates how the heart operates, sort of. Just like our heart starts pumping more blood when we start running or when we engage with some other demanding task, the CPU can vary the clock frequency depending on the amount of workload. This mechanism is called **speed scaling** or **speed step** when the range of frequency is between the *lowest* and the *stock frequency*, and **turbo boost** for the range *stock frequency* to *max frequency*. The following figure illustrates this phenomenon using the data collected from the computer under 
