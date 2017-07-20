@@ -83,11 +83,19 @@ Being the heart of a computer, the CPU also imitates how the heart operates, sor
 <img src="figures/Load-vs-Freq.png" alt="perHr" style="width: 200px; height: 200px" />
 
 Some claim that *turbo boost* is just *speed scaling* rebranded for marketing purpose. That might very well be the case. However, one clear distinction
-is that with speed scaling, all the cores of a CPU can simultaneously operate at the advertised stock frequency if needed, whereas only one 
-core can be turbo boosted at a time.
+is that with speed scaling, all the cores of a CPU can simultaneously operate at the advertised stock frequency if needed, whereas only a portion
+of the cores (usually just one) can be turbo boosted at a time.
 
 <img src="figures/Load-vs-ProcPower.png" alt="perHr" style="width: 200px; height: 200px" />
 
 ## Total power vs CPU power
+Obviously, the CPU is not the only component that consumes power. A computer's total power consumption can still be high when the load on the CPU is low. For example, streaming high definition video from youtube will keep the GPU and the LCD display busy without having a significant impact on 
+CPU load. Another example can be an input/output intensive task that frequently reads and writes to disk that requires CPU time only occasionally.
+The following scatter plot illustrates both the total system power consumption and CPU power consumption. A linear approximation of system and CPU power as a function of CPU load is also given in the same figure.
 
 <img src="figures/Load-vs-Power.png" alt="perHr" style="width: 200px; height: 200px" />
+
+According to the linear approximation, the system and CPU power consumptions when the CPU is idle are around $12$ and $3$ Watt, respectively.
+These values at 100% CPU load would be around $28$ and $35$ Watt, respectively. Over the entire load spectrum, the gap between the two lines
+represents power consumption by other components than the CPU. Note also that the gap gets narrower as the load increases. This is intuitive 
+since the CPU takes the lion's share of power at higher load. 
