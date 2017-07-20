@@ -95,7 +95,7 @@ The following scatter plot illustrates both the total system power consumption a
 
 <img src="figures/Load-vs-Power.png" alt="perHr" style="width: 200px; height: 200px" />
 
-According to the linear approximation, the system and CPU power consumptions when the CPU is idle are around $12$ and $3$ Watt, respectively.
-These values at 100% CPU load would be around $28$ and $35$ Watt, respectively. Over the entire load spectrum, the gap between the two lines
+According to the linear approximation, the system and CPU power consumptions when the CPU is idle are around *12* and *3* Watt, respectively.
+These values at 100% CPU load would be around *28* and *35* Watt, respectively. Over the entire load spectrum, the gap between the two lines
 represents power consumption by other components than the CPU. Note also that the gap gets narrower as the load increases. This is intuitive 
 since the CPU takes the lion's share of power at higher load. 
