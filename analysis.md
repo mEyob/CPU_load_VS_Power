@@ -82,9 +82,10 @@ Being the heart of a computer, the CPU also imitates how the heart operates, sor
 
 <img src="figures/Load-vs-Freq.png" alt="perHr" style="width: 200px; height: 200px" />
 
-Some claim that *turbo boost* is just *speed scaling* rebranded for marketing purpose. That might very well be the case. However, one clear distinction
-is that with speed scaling, all the cores of a CPU can simultaneously operate at the advertised stock frequency if needed, whereas only a portion
-of the cores (usually just one) can be turbo boosted at a time.
+Some claim that *turbo boost* is just *speed scaling* rebranded for marketing purpose. However, [this paper](http://ieeexplore.ieee.org/document/6148200/authors) concisely described turbo boost as the performance improvement gained by pushing the CPU
+beyond its *Thermal Design Point (TDP)* for short periods of time. Since the long run average power cannot exceed the 
+TDP, turbo boost cannot be sustained for a long period, and is made possible by the *thermal budget* accumulated during less 
+demanding periods.
 
 <img src="figures/Load-vs-ProcPower.png" alt="perHr" style="width: 200px; height: 200px" />
 
@@ -96,6 +97,6 @@ The following scatter plot illustrates both the total system power consumption a
 <img src="figures/Load-vs-Power.png" alt="perHr" style="width: 200px; height: 200px" />
 
 According to the linear approximation, the system and CPU power consumptions when the CPU is idle are around *12* and *3* Watt, respectively.
-At 100% CPU load, system and CPU power would be around *35* and *28$ Watt, respectively. Over the entire load spectrum, the gap between the two lines
+At 100% CPU load, system and CPU power would be around *35* and *28* Watt, respectively. Over the entire load spectrum, the gap between the two lines
 represents power consumed by components other than the CPU. Note also that the gap gets narrower as the CPU load increases. This is intuitive 
 since the CPU takes the lion's share of power at higher load. 
